@@ -1,0 +1,329 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Proxima Nova Condensed', sans-serif;
+  /* font-family: 'Proxima Nova Extra Condensed', sans-serif; */
+  line-height: 1.5;
+  background: rgb(255, 254, 252, );
+  color: rgb(51, 51, 51);
+
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input, textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    flex-direction: row;
+}
+.logo {
+    /* margin-right: 120px;     */
+}
+.nav-item {
+}
+.nav-link {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 125%;
+    text-align: center;
+    color: var(--black);
+}
+
+.nav{
+    display: flex;
+    gap: 100px;
+}
+.links{
+    display: flex;
+    gap:12px;
+}
+.link-item{
+
+}
+.number{
+    font-weight: 700;
+    font-size: 1.62rem;
+    line-height: 125%;
+}
+.right-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.time{
+font-size: 16px;
+font-weight: 400;
+line-height: 125%;
+letter-spacing: 0px;
+text-align: left;
+}
+
+
+.more{
+font-size: 14px;
+font-weight: 700;
+line-height: 125%;
+letter-spacing: 0px;
+text-align: left;
+margin-bottom: 16px;
+}
+.more-div {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.hero_back::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/test_gross/img/background.jpeg) ;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15; 
+    z-index: -1; 
+}
+.container-hero {
+    display: block;
+    padding:75px;
+    background-image:url(/test_gross/img/hero.svg),url(/test_gross/img/hero_2.svg),url(/test_gross/img/hero_3.svg), url(/test_gross/img/pic.svg);
+    /* background-size: cover; */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-position:0px 8px, 514px 404px, 1172px 8px, 1140px 38px;
+    height:750px;
+    
+
+}
+.hero-note {
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.hero-title {
+color: rgb(51, 51, 51);
+font-size: 90px;
+font-weight: 900;
+line-height: 110%;
+letter-spacing: 0px;
+text-align: left;
+margin-bottom: 20px;
+}
+.hero-btn {
+    border-radius: 5px;
+    background: linear-gradient(132.04deg, rgb(255, 223, 0) -10.242%,rgb(255, 184, 0) 111.108%);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 40px 0px;
+    width: 310px;
+    height: 65px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 0px;
+    text-align: left;       
+}
+.marg{
+    margin-bottom:40px;
+}
+
+
+.dots-container {
+    display: flex;
+    gap: 10px;
+    transform: translateY(200px);
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    animation: glow 1.5s infinite ease-in-out;
+}
+
+/* Анімація для кожної крапки з різними затримками */
+.dot:nth-child(1) { animation-delay: 0s; }
+.dot:nth-child(2) { animation-delay: 0.3s; }
+.dot:nth-child(3) { animation-delay: 0.6s; }
+.dot:nth-child(4) { animation-delay: 0.9s; }
+.dot:nth-child(5) { animation-delay: 1.2s; }
+
+@keyframes glow {
+    0%, 100% {
+        background-color: #ccc; /* Сірий колір */
+        transform: scale(1);
+    }
+    50% {
+        background-color: #ffcc00; /* Жовтий колір */
+        transform: scale(1.2);
+    }
+}
+
+
+.test-container {
+padding: 75px 100px;
+background-image: url(/test_gross/img/back_test.svg);
+background-repeat: no-repeat;
+background-position: 0 280px;
+}
+.test-block{
+    display: flex;
+    gap: 40px;
+
+
+}
+.test-title {
+font-size: 44px;
+font-weight: 800;
+line-height: 125%;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 50px;
+}
+.test-img{
+    border-radius: 10px;
+    max-width: 900px;
+    max-height: 464px;
+}
+.test-paragraphs {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.test-text {
+
+font-size: 20px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+max-width: 800px;
+}
+
+
+.best-container{
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    padding: 50px 75px;
+    background-image: url('/test_gross/img/best.svg'), linear-gradient(132.04deg, rgb(255, 223, 0) -10.06%, rgb(255, 184, 0) 110.993%);
+    background-color: rgb(255, 254, 252); 
+    background-repeat: no-repeat;
+    background-position: 1100px 50px, center; 
+    background-size: auto, cover; 
+}
+.best-title {
+font-size: 44px;
+font-weight: 800;
+line-height: 125%;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom:50px;
+}
+.best-paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+.best-title-text{
+font-size: 26px;
+font-weight: 700;
+line-height: 125%;
+letter-spacing: 0%;
+text-align: left;
+
+}
+.best-text {
+font-size: 20px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.best-links {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+}
+.best-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 3 / 1 / 4 / 2; }
+.div6 { grid-area: 3 / 2 / 4 / 3; }
+.div7 { grid-area: 4 / 1 / 5 / 2; }
+.div8 { grid-area: 4 / 2 / 5 / 3; }
+.div9 { grid-area: 5 / 1 / 6 / 2; }
+.div10 { grid-area: 5 / 2 / 6 / 3; }
